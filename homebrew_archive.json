@@ -1,0 +1,817 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ARCH_MHB",
+				"full": "Marrix Homebrew Archive",
+				"abbreviation": "MHB",
+				"color": "6f31a3",
+				"authors": [
+					"Marrix"
+				],
+				"dateReleased": "2026-04-27",
+				"version": "1.0",
+				"url": "https://raw.githubusercontent.com/TheMarrix/5eTools-Homebrew/refs/heads/main/homebrew_archive.json"
+			}
+		],
+		"dependencies": {
+			"class": [
+				"LLAPal"
+			],
+			"spell": [
+				"llspell"
+			],
+			"optionalfeature": [
+				"LLExploits"
+			]
+		},
+		"edition": "classic",
+		"status": "ready",
+		"dateAdded": 1777288513,
+		"dateLastModified": 1777292030
+	},
+	"race": [
+		{
+			"name": "Nagavarii",
+			"source": "ARCH_MHB",
+			"lineage": "VRGR",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"creatureTypes": [
+				"fey"
+			],
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": {
+				"walk": 30,
+				"climb": true
+			},
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"acrobatics",
+							"arcana",
+							"athletics",
+							"nature",
+							"perception",
+							"stealth",
+							"survival"
+						],
+						"count": 2
+					}
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"entries": [
+						"Nagavarii reach adulthood at 4 years old and have a natural lifespan of about 20 years. However, they can prolong their lifespan to up to twice that length by draining magic from enchanted artifacts."
+					]
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"You are Medium or Small. You choose the size when you select this race."
+					]
+				},
+				{
+					"name": "Creature Type",
+					"entries": [
+						"You are a Fey."
+					]
+				},
+				{
+					"name": "Speed",
+					"entries": [
+						"Your walking speed is 30 feet, and you have a climbing speed equal to your walking speed."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"name": "Natural Armor",
+					"entries": [
+						"You have tough, resilient scales. When you aren't wearing armor, your base AC is 13 + Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC."
+					]
+				},
+				{
+					"name": "Serpent's Intuition",
+					"entries": [
+						"You gain proficiency in two of the following skills of your choice: {@skill Acrobatics}, {@skill Arcana}, {@skill Athletics}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, or {@skill Survival}."
+					]
+				},
+				{
+					"name": "Serpentine Form",
+					"entries": [
+						"Your limbless, serpentine body affects how you interact with your environment:",
+						{
+							"type": "list",
+							"items": [
+								"You cannot wear armor unless it is made to fit your unique form."
+							]
+						},
+						{
+							"type": "list",
+							"items": [
+								"You can use your tail to wield one-handed weapons, use tools, or manipulate objects."
+							]
+						},
+						{
+							"type": "list",
+							"items": [
+								"You can perform somatic components of spells through movements of your body. The gem on your head glows softly when you do so."
+							]
+						},
+						{
+							"type": "list",
+							"items": [
+								"You can grapple one creature at a time by coiling your body around it. This does not prevent you from using weapons or other objects with your tail."
+							]
+						}
+					]
+				},
+				{
+					"name": "Slithering Agility",
+					"entries": [
+						"Moving while {@condition prone} costs you no extra movement, and standing up from {@condition prone} costs you only 5 feet of movement."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"It is said the first Nagavarii emerged in the shimmering forests of the Feywild, with some of the plane’s magic still lingering in the gem set in their foreheads. They resemble all kinds of snakes, but with more resilient and vibrant scales.",
+					"Subtle and cunning by nature, the Nagavarii can use their tails to wield weapons and tools with great precision. Do to their fey nature, they often steal and hoard magical artifacts, which they can drain of their magic to lengthen their short lifespans.",
+					"While most Nagavarii remain in the Feywild’s hidden places, some tribes have ventured into the material plane, driven by curiosity and in search of magical artifacts."
+					]
+				},
+				"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Conquest",
+			"shortName": "Conquest",
+			"source": "ARCH_MHB",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"cause fear|xge",
+							"command"
+						],
+						"5": [
+							"hold person",
+							"tasha's mind whip|tce"
+						],
+						"9": [
+							"bestow curse",
+							"fear"
+						],
+						"13": [
+							"dominate beast",
+							"staggering smite (alternate)|llspell"
+						],
+						"17": [
+							"dominate person",
+							"vorpal blade|llspell"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"cause fear|xge",
+				"command",
+				"hold person",
+				"tasha's mind whip|tce",
+				"bestow curse",
+				"fear",
+				"dominate beast",
+				"staggering smite (alternate)|llspell",
+				"dominate person",
+				"vorpal blade|llspell"
+			],
+			"subclassFeatures": [
+				"Oath of Conquest|Alternate Paladin|LLAPal|Conquest|ARCH_MHB|3",
+				"Aura of Dominion|Alternate Paladin|LLAPal|Conquest|ARCH_MHB|7",
+				"Ruthless Reprisal|Alternate Paladin|LLAPal|Conquest|ARCH_MHB|15",
+				"Avatar of Conquest|Alternate Paladin|LLAPal|Conquest|ARCH_MHB|20"
+			]
+		}
+	],
+	"subclassFeature": [
+	{
+			"name": "Conquest",
+			"shortName": "Conquest",
+			"source": "ARCH_MHB",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"cause fear|xge",
+							"command"
+						],
+						"5": [
+							"hold person",
+							"tasha's mind whip|tce"
+						],
+						"9": [
+							"bestow curse",
+							"fear"
+						],
+						"13": [
+							"dominate beast",
+							"staggering smite (alternate)|llspell"
+						],
+						"17": [
+							"dominate person",
+							"vorpal blade|llspell"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"cause fear|xge",
+				"command",
+				"hold person",
+				"tasha's mind whip|tce",
+				"bestow curse",
+				"fear",
+				"dominate beast",
+				"staggering smite (alternate)|llspell",
+				"dominate person",
+				"vorpal blade|llspell"
+			],
+			"subclassFeatures": [
+				"Oath of Conquest|Alternate Paladin|LLAPal|Conquest|ARCH_MHB|3",
+				"Aura of Dominion|Alternate Paladin|LLAPal|Conquest|ARCH_MHB|7",
+				"Ruthless Reprisal|Alternate Paladin|LLAPal|Conquest|ARCH_MHB|15",
+				"Avatar of Conquest|Alternate Paladin|LLAPal|Conquest|ARCH_MHB|20"
+			]
+		},
+		{
+			"name": "Oath of Conquest",
+			"source": "ARCH_MHB",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"subclassShortName": "Conquest",
+			"subclassSource": "ARCH_MHB",
+			"level": 3,
+			"entries": [
+				"Paladins who swear the Oath of Conquest seek glory through domination. Victory is not enough for these ruthless knights, they must crush their foes in body and spirit. They uphold the rule of law through iron justice, giving no quarter or mercy.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of Conquest|Alternate Paladin|LLAPal|Conquest|ARCH_MHB|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquering Presence|Alternate Paladin|LLAPal|Conquest|ARCH_MHB|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Lethal Strike|Alternate Paladin|LLAPal|Conquest|ARCH_MHB|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conquest Spells|Alternate Paladin|LLAPal|Conquest|ARCH_MHB|3"
+				}
+			]
+		},
+		{
+			"name": "Tenets of Conquest",
+			"source": "ARCH_MHB",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"subclassShortName": "Conquest",
+			"subclassSource": "ARCH_MHB",
+			"level": 3,
+			"entries": [
+				"Paladins who swear this Oath uphold these Tenets:",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"Conquest",
+							"Crush your foes so they will never dare to stand against you again."
+						],
+						[
+							"Iron Law",
+							"Your word is law. Loyalty is rewarded, and dissent punished without mercy."
+						],
+						[
+							"Might",
+							"Might makes right, and you are mighty."
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Conquest Spells",
+			"source": "ARCH_MHB",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"subclassShortName": "Conquest",
+			"subclassSource": "ARCH_MHB",
+			"level": 3,
+			"entries": [
+				"You learn certain spells at the Paladin levels as noted in the table below. They don't count against your number of Spells Known and can't be switched upon gaining a level.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell cause fear|xge}, {@spell command}"
+						],
+						[
+							"5th",
+							"{@spell hold person}, {@spell tasha's mind whip|tce}"
+						],
+						[
+							"9th",
+							"{@spell bestow curse}, {@spell fear}"
+						],
+						[
+							"13th",
+							"{@spell staggering smite (alternate)|llspell}, {@spell dominate beast}"
+						],
+						[
+							"17th",
+							"{@spell dominate person}, {@spell vorpal blade|llspell}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Conquering Presence",
+			"source": "ARCH_MHB",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"subclassShortName": "Conquest",
+			"subclassSource": "ARCH_MHB",
+			"level": 3,
+			"consumes": {
+				"name": "Divine Fervor",
+				"amount": 3
+			},
+			"entries": [
+				"You can expend three uses of Divine Fervor to exude a terrifying presence. As an action, you force each creature of your choice that you can see within 30 feet of you to make a Wisdom saving throw. On a failed save, you choose for each creature whether it is knocked {@condition prone} or becomes {@condition frightened} of you for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Starting at 5th level in this class, when you use this feature, you can make one weapon attack as a bonus action on that turn."
+			]
+		},
+		{
+			"name": "Lethal Strike",
+			"source": "ARCH_MHB",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"subclassShortName": "Conquest",
+			"subclassSource": "ARCH_MHB",
+			"level": 3,
+			"consumes": {
+				"name": "Divine Fervor",
+				"amount": 1
+			},
+			"entries": [
+				"You can infuse your strikes with your desire to conquer and dominate. When you make a weapon attack roll, but before you know if you hit or miss, you can expend one or more uses of Divine Fervor to gain a bonus to the roll equal to 5 times the number of uses expended."
+			]
+		},
+		{
+			"name": "Aura of Dominion",
+			"source": "ARCH_MHB",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"subclassShortName": "Conquest",
+			"subclassSource": "ARCH_MHB",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"The power of your Oath emanates from you to menace your foes. If a creature that is {@condition frightened} of you starts its turn within your Aura of Protection, it takes psychic damage equal to half your paladin level. In addition, creatures of your choice that are {@condition frightened} of you have their speed reduced to 0 while in the Aura.",
+				"This has no effect on creatures hidden behind total cover."
+			]
+		},
+		{
+			"name": "Ruthless Reprisal",
+			"source": "ARCH_MHB",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"subclassShortName": "Conquest",
+			"subclassSource": "ARCH_MHB",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Those who dare to stand against you are punished for their hubris. Whenever a creature within your Aura of Protection damages you or forces you to make a saving throw, it takes damage equal to your Charisma modifier (a minimum of 1) of the same damage type as your Divine Smite."
+			]
+		},
+		{
+			"name": "Avatar of Conquest",
+			"source": "ARCH_MHB",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"subclassShortName": "Conquest",
+			"subclassSource": "ARCH_MHB",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"As a bonus action, you can transform into an avatar of divine conquest. While transformed you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You gain resistance to all damage.",
+						"You can cast the {@spell command} spell as a bonus action on each of your turns without spending a spell slot. Targets in your Aura of Protection have disadvantage on the saving throw.",
+						"Whenever you take the Attack action on your turn, you can make one additional weapon attack as part of that action."
+					]
+				},
+				"This transformation lasts for 1 minute. It ends early if you become Unconscious or use a bonus action to end it. You can transform once per long rest at no cost, after which, you must expend a 5th-level spell slot to transform again."
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Greater Soul Cage",
+			"source": "ARCH_MHB",
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when a small or bigger creature you can see within 60 feet of you dies"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a phylactery worth 5000 gp that houses the caster's soul",
+					"cost": 5000000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"This spell snatches the soul of a dying creature and traps it within your phylactery. The creature must be within range when it dies, and it can’t be restored to life by any means short of a {@spell wish} spell while its soul is trapped or once it has been consumed.",
+				"While a soul is trapped in this way, you can exploit it up to four times in any of the ways described below. Once you exploit a soul for the fourth time, when you cast this spell again, or after 8 hours have passed, the soul is consumed and the spell ends.",
+				{
+					"type": "entries",
+					"name": "Borrow Experience",
+					"entries": [
+						"You can use a bonus action to bolster yourself with the soul's life experience, making your next attack roll, ability check, or saving throw with advantage. If you don't use this benefit before the start of your next turn, it is lost."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Soul Infuse",
+					"entries": [
+						"You can use a bonus action to empower a spell with the soul’s essence. The next 1st level or higher spell you cast is treated as one level higher than the spell slot expended. If you don’t use this benefit before the end of your turn, it is lost."
+					]
+				},
+				"The empowered spell can't be of a higher level than the spell slot used to cast this spell.",
+				{
+					"type": "entries",
+					"name": "Steal Life",
+					"entries": [
+						"You can use a bonus action to drain vigor from the soul and regain {@dice 1d8} hit points. When you cast this spell using a spell slot of 6th level or higher, you instead regain {@dice 2d8} hit points."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Query Soul",
+					"entries": [
+						"{@i (Requires 5th-level spell slot or higher)}",
+						"You ask the soul a question (no action required) and receive a brief telepathic answer, which you can understand regardless of the language used. The soul knows only what it knew in life, but it must answer you truthfully and to the best of its ability. The answer is no more than a sentence or two and might be cryptic."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Eyes of the Dead",
+					"entries": [
+						"{@i (Requires 5th-level spell slot or higher)}",
+						"You can use an action to name a place the creature saw in life, which creates an invisible sensor somewhere in that place if it is on the plane of existence you're currently on. The sensor remains for as long as you concentrate, up to 10 minutes (as if you were {@status concentration||concentrating} on a spell). You receive visual and auditory information from the sensor as if you were in its space using your senses."
+					]
+				},
+				"A creature that can see the sensor (such as one using {@spell see invisibility} or {@sense truesight}) sees a translucent image of the tormented creature whose soul you caged."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, you can exploit the trapped soul one additional time for each slot level above 4rd. Some exploits require the spell to be cast using a higher-level spell slot."
+					]
+				}
+			],
+			"miscTags": [
+				"ADV",
+				"HL",
+				"UBA"
+			]
+		}
+	],
+	"charoption": [
+		{
+			"name": "Lich Transformation",
+			"source": "ARCH_MHB",
+			"optionType": [
+				"Ritual"
+			],
+			"entries": [
+				"Liches are powerful spellcasters who have conquered death through the relentless pursuit of arcane power. All liches undergo a ritual that binds their soul to a soul cage, a personal and well protected object that allows the lich’s destroyed body to reform as long as the object is intact.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Undead Form",
+							"entries": [
+								"You have cheated death, represented by the following traits:",
+								{
+									"type": "list",
+									"items": [
+										"You become {@variantrule Vulnerability|xphb|vulnerable} to radiant damage. You become an Undead in addition to any other creature type(s).",
+										"You have advantage on saving throws against disease and being {@condition poisoned}, and you have resistance to poison damage.",
+										"You stop aging. You are immune to any effect that would age you, and you cannot die from old age. You do not require air, food, or drink.",
+										"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Soul Cage",
+							"entries": [
+								"A lich’s soul cage must be destroyed to prevent them from reforming. When you die, your body is destroyed, leaving behind only your equipment. The soul cage then begins rebuilding your undead body, which takes {@damage 1d10} days. At the end of that time, you manifest next to the soul cage with the effects of the {@spell Resurrection|phb} spell, but without any equipment you previously carried."
+							]
+						},
+						"If your soul cage is destroyed but you aren't, you can attempt to find your soul and trap it again, building a new soul cage. This is no trivial feat and often takes an entire adventure to accomplish. If you don't cage your soul again, you suffer an eternity of decay and decline.",
+						{
+							"type": "inset",
+							"name": "Alternative Ruling",
+							"entries": [
+								"If you find this form of automatic resurrection too strong, you can use the following ruling instead: After you die, your soul cage can be used as a spellcasting focus for a {@spell Raise Dead|phb} or {@spell Resurrection|phb} spell, or other similar effects, targeting you without the need of your body. The caster must still provide any material components with a gold cost, and you return to life without any equipment you previously carried."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Consuming Souls",
+							"entries": [
+						"Your body is sustained by consuming the souls of other creatures. You learn the {@spell Greater Soul Cage|arch_mhb} spell. It is always prepared for you and doesn’t count against the number of spells you can prepare each day. If you already know the {@spell Soul Cage|xge} spell, it is replaced by this version of the spell."
+							]
+						},
+						"If you go too long without using this spell to consume a soul, your body begins to decay, and you gain levels of exhaustion. Exhaustion gained in this way can’t be removed except by consuming a soul with this spell.",
+						{
+							"type": "inset",
+							"name": "Rule Clarification",
+							"entries": [
+								"The timing of this feature is intentionally undefined. The DM determines when “too long” has passed, based on the pace and tone of the campaign. Note that this rule is primarily intended for use when a lich refuses or neglects the need to consume souls, rather than to strictly track the use of this feature."
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "+1 Rune Tablet",
+			"source": "ARCH_MHB",
+			"rarity": "uncommon",
+			"type": "SCF",
+			"reqAttune": "by a wizard",
+			"reqAttuneTags": [
+				{
+					"class": "wizard"
+				}
+			],
+			"wondrous": true,
+			"weight": 2,
+			"bonusSpellAttack": "+1",
+			"bonusSpellSaveDc": "+1",
+			"focus": [
+				"Wizard"
+			],
+			"entries": [
+				"While you are holding this stone tablet, you can use it as a spellcasting focus for your wizard spells, and you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your wizard spells. In addition, when you use your {@classFeature Arcane Recovery|Wizard|phb|1} feature, you can increase the number of spell slot levels you regain by 1.",
+				"The tablet has three sockets that can each hold one {@item Spellshard|erlw}. As an action, you can insert or remove a {@item Spellshard|erlw} from a socket."
+			]
+		},
+		{
+			"name": "+2 Rune Tablet",
+			"source": "ARCH_MHB",
+			"type": "SCF",
+			"rarity": "rare",
+			"reqAttune": "by a wizard",
+			"reqAttuneTags": [
+				{
+					"class": "wizard"
+				}
+			],
+			"wondrous": true,
+			"recharge": "dawn",
+			"weight": 2,
+			"bonusSpellAttack": "+2",
+			"bonusSpellSaveDc": "+2",
+			"focus": [
+				"Wizard"
+			],
+			"entries": [
+				"While you are holding this stone tablet, you can use it as a spellcasting focus for your wizard spells, and you gain a +2 bonus to spell attack rolls and to the saving throw DCs of your wizard spells. In addition, when you use your {@classFeature Arcane Recovery|Wizard|phb|1} feature, you can increase the number of spell slot levels you regain by 1.",
+				"The tablet has three sockets that can each hold one {@item Spellshard|erlw}. As an action, you can insert or remove a {@item Spellshard|erlw} from a socket.",
+				"As a bonus action, you can replace one wizard spell you have prepared with another spell written in one of the socketed {@item Spellshard|erlw|Spellshards}. Once this property is used, it can't be used again until the next dawn."
+			]
+		},
+		{
+			"name": "Mantle of Safekeeping",
+			"source": "ARCH_MHB",
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"weight": 15,
+			"bonusAc": "+1",
+			"bonusSavingThrow": "+1",
+			"entries": [
+				"While you wear this mantle, you gain a +1 bonus to AC and saving throws. The mantle’s interior functions as a {@item Bag of Holding|dmg}.",
+				"While attuned, you can reach into the mantle and withdraw any specific stored item you are currently thinking of, provided it can be held in one hand. Larger items still require an action to retrieve."
+			]
+		},
+		{
+			"name": "The Singing Blade",
+			"source": "ARCH_MHB",
+			"baseItem": "longsword|phb",
+			"type": "M",
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": "by a spellcaster",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"F",
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"bonusWeapon": "+1",
+			"entries": [
+				"A blade etched with runes that react when touched by magic.",
+				"You gain a +1 bonus to attack and damage rolls with this weapon. When you cast a non-blade cantrip, you can channel it through the blade by making a melee weapon attack as part of casting the spell. The cantrip must have a casting time of 1 action, target only one creature, and require a spell attack roll or force a saving throw.",
+				"If the weapon attack misses, the spell fails and has no effect. On a hit, the spell takes effect immediately using the rules below:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Damage Type.}  The weapon attack deals the cantrip’s damage type instead of its normal damage type. Until the end of the current turn, attacks you make with this weapon can deal either its normal damage type or the cantrip’s damage type.",
+						"{@b Spell Damage.}  The spell's damage is added to the weapon attack, but reduced by one damage die. The spell's other effects occur as normal.",
+						"{@b Saving Throws.}  The target is treated as though it failed its saving throw against the spell.",
+						"{@b Exceptions.} Certain cantrips such as {@spell Lightning Lure|tce} may not make sense when used as blade-cantrips. The DM may allow the wielder to make the weapon attack at greater range than normal in such cases."
+					]
+				},
+				"{@b {@i Arcane Conduit.}} You can use your Intelligence modifier, instead of Strength or Dexterity, for the attack and damage rolls you make with this weapon. You must use the same modifier for both rolls."
+			]
+		},
+		{
+			"name": "+1 Spiked Collar",
+			"source": "ARCH_MHB",
+			"rarity": "uncommon",
+			"wondrous": true,
+			"bonusWeapon": "+1",
+			"entries": [
+				"A magical collar with metal spikes protruding around the outside of it. A Beast wearing this magic item gains a +1 bonus to its attack rolls, damage rolls and DCs set while wearing this collar."
+			]
+		},
+		{
+			"name": "Whispertongue Talisman",
+			"source": "ARCH_MHB",
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"weight": 1,
+			"reqAttune": "by a warlock",
+			"reqAttuneTags": [
+				{
+					"class": "warlock"
+				}
+			],
+			"entries": [
+				"A magical talisman that holds a petrified tongue of a devil. While attuned to this talisman your curses become more powerful.",
+				"{@b {@i Requirement: Accursed Specter feature.}} While attuned your changes: If a creature you can see that is under the effects of your Hexblade's Curse dies, you can use your reaction to raise its spirit from the corpse. A spectral version of that creature appears that uses its original stat block and remains for 1 turn, after which time it vanishes. The creature's turn comes immediately after the turn in which it died. It obeys your mental commands, and it can take any action listed in its stat block, except Legendary Actions or Lair Actions. If the creature is capable of spellcasting it uses your spellslots."
+			]
+		},
+		{
+			"name": "Strange Amulet",
+			"source": "ARCH_MHB",
+			"tier": "major",
+			"rarity": "very rare",
+			"wondrous": true,
+			"curse": true,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Curse",
+					"entries": [
+						"Once you attune to the amulet, you cannot willingly remove it, and it remains clasped around your neck at all times. A {@spell Remove Curse} spell of sufficiently high level might reveal the nature of the curse, but cannot remove it."
+					]
+				},
+				"While attuned to this amulet, you gain the following benefits:",
+				"",
+				{
+					"type": "entries",
+					"name": "Spectral Arm",
+					"entries": [
+						"A translucent spectral arm emerges from your upper body. You can manifest or dismiss this arm at any time (no action required). The spectral arm can manipulate objects, activate magic items, open or close doors or containers, pick up or set down Tiny objects, or wield a weapon with the light property.",
+						"You can also cast the {@spell Mage Hand} cantrip. When you do, the spectral arms hand becomes the hand of the spell. The range of the spell increases to 60 feet, and its duration becomes 10 minutes. While the spell is active, you cannot use the spectral arm for its other functions."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spell Echo",
+					"entries": [
+						"When you cast a necromancy spell of a level equal to or less than half your proficiency bonus (rounded up), you can spend 10 minutes to store it in the amulet. Once per long rest, you can cast the stored spell without expending a spell slot, using the amulet in place of any material components. The spell is cast at a level equal to half your proficiency bonus (rounded up). Storing a new spell replaces the previous one."
+					]
+				}
+			]
+		}
+	]
+}
