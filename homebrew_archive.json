@@ -28,7 +28,7 @@
 		"edition": "classic",
 		"status": "ready",
 		"dateAdded": 1777288513,
-		"dateLastModified": 1777292030
+		"dateLastModified": 1777294291
 	},
 	"race": [
 		{
@@ -317,15 +317,15 @@
 				},
 				{
 					"type": "refSubclassFeature",
+					"subclassFeature": "Conquest Spells|Alternate Paladin|LLAPal|Conquest|ARCH_MHB|3"
+				},
+				{
+					"type": "refSubclassFeature",
 					"subclassFeature": "Conquering Presence|Alternate Paladin|LLAPal|Conquest|ARCH_MHB|3"
 				},
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Lethal Strike|Alternate Paladin|LLAPal|Conquest|ARCH_MHB|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Conquest Spells|Alternate Paladin|LLAPal|Conquest|ARCH_MHB|3"
 				}
 			]
 		},
